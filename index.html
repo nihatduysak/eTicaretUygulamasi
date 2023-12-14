@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Ticaret</title>
+    <script src="assets/eTicaret.js" defer></script>
+</head>
+    <h1>e-Ticaret - Alışveriş Sitesi</h1>
+<body>
+    <h2>Sepetinizdeki Ürünler</h2> 
+    <h4>Sepet Tutarı : <input type="number" id="basketTotal"></h4>
+    <table border="3" width="900">
+        <thead>
+            <th width="2%">No</th>
+            <th width="10%">Ürün Adı</th>
+            <th width="5%">Sepet Adedi</th>
+            <th width="5%">Kategorisi</th>
+            <th width="5%">Rengi</th>
+            <th width="5%">Fiyatı</th>
+            <th width="6%">Sepetten Çıkar</th>
+        </thead>
+        <tbody border="3" width="900" id="basketTable">          
+        </tbody>
+    </table>
+    <br>
+    <button id="removeAll">Sepeti Temizle</button>
+    <br>
+    <br>
+    <h4>Kategori Seç : <select name="Kategori" id="categorySelection">
+        <option value="all" id="all">Tümü</option>
+        <option value="men" id="men">Erkek</option>
+        <option value="women" id="women">Kadın</option>
+        <option value="child" id="child">Çocuk</option>
+    </select></h4>
+    <input type="text" id="productFilter" placeholder="Ürün Ara">
+    <br>
+    <br>
+    <h2>Listelenen Ürünler</h2> 
+    <table border="3" width="900" id="productTable">
+    <tr>
+        <th width="2%">No</th>
+        <th width="10%">Ürün Adı</th>
+        <th width="5%">Stok Adedi</th>
+        <th width="5%">Kategorisi</th>
+        <th width="5%">Rengi</th>
+        <th width="5%">Fiyatı</th>
+        <th width="15%">Ürün Görseli</th>
+        <th width="6%">Sepete Ekle</th>
+    </tr>
+    </table>      
+    <a href="#top"><img src="assets/img/upKey.png" alt="up_key" width="100"></a>
+</body>
+</html>
